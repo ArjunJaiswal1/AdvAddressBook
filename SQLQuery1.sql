@@ -20,3 +20,10 @@ insert into Address_Book (FirstName, LastName, Address, City, State, ZipCode, Ph
 insert into Address_Book Values ('prakash', 'Alok', 'Govindpura', ' Banglore', ' karnataka', '560045', '7677803859', 'paras@gmail.com');
 insert into Address_Book Values ('Raja', 'Gurjar', 'Tilaknagar', ' Newdelhi', ' Sagarpur', '110045', '727581654', 'raja12@gmail.com');
 insert into Address_Book Values ('Golu', 'Raj', 'Khagariya', ' Betiyyah', ' Bihar', '845345', '7345819656', 'Goluraj@gmail.com');
+
+
+---UC4 Ability to edit existing contact ------
+
+SELECT * FROM Address_Book;
+update Address_Book set Zipcode = '3456', Email = 'arjunjaiswal8065@gmail.com' where FirstName = 'prakash';
+select * from Address_Book;
