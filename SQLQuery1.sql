@@ -41,3 +41,12 @@ where City = 'Dhaka' or State = 'Purnahiya';
 ---UC7 Ability to count person by city and state---
 
 select City,count(City) from Address_Book group by City; select State,count(State) from Address_Book group by State;
+
+
+---UC8 Ability to retrieve the entries sorted by alphabetically by person name----
+
+select * from Address_Book
+where City = 'banglore'
+order by FirstName asc;
+
+insert into Address_Book VALUES('Prakash', 'Jaiswal', ' tilak', 'pune', 'mumbai', '9678', '9821675435', 'prakash@gmail.com');
