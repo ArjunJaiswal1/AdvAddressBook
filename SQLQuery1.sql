@@ -37,3 +37,7 @@ select * from Address_Book;
 
 Select * from Address_Book 
 where City = 'Dhaka' or State = 'Purnahiya';
+
+---UC7 Ability to count person by city and state---
+
+select City,count(City) from Address_Book group by City; select State,count(State) from Address_Book group by State;
