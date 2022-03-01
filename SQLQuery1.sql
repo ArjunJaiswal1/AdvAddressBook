@@ -27,3 +27,8 @@ insert into Address_Book Values ('Golu', 'Raj', 'Khagariya', ' Betiyyah', ' Biha
 SELECT * FROM Address_Book;
 update Address_Book set Zipcode = '3456', Email = 'arjunjaiswal8065@gmail.com' where FirstName = 'prakash';
 select * from Address_Book;
+
+----UC5 Ability to Delete person Using person name----
+
+delete from Address_Book where FirstName = 'Arjun'
+select * from Address_Book;
